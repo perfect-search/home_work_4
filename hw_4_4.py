@@ -24,8 +24,8 @@ def get_contact_user(args, contacts):
 
 def get_all_numbers(contacts):
     list_numbers = []
-    for value in contacts.values():
-        list_numbers.append(value)
+    for key,value in contacts.items():
+        list_numbers.append([key,value])
 
     return list_numbers
 
